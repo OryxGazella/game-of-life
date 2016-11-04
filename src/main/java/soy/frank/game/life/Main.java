@@ -55,16 +55,16 @@ public class Main {
 
         @Override
         public void render() {
-            if(Gdx.input.isKeyPressed(Input.Keys.ESCAPE)) {
+            if (Gdx.input.isKeyPressed(Input.Keys.ESCAPE)) {
                 animator.dispose();
                 Gdx.app.exit();
                 System.exit(0);
             }
-            if(Gdx.input.isKeyPressed(Input.Keys.EQUALS)) {
+            if (Gdx.input.isKeyPressed(Input.Keys.EQUALS)) {
                 zoomEvents.onNext(Zoom.In);
             }
 
-            if(Gdx.input.isKeyPressed(Input.Keys.MINUS)) {
+            if (Gdx.input.isKeyPressed(Input.Keys.MINUS)) {
                 zoomEvents.onNext(Zoom.Out);
             }
 

@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 
 public class Animator implements Disposable {
 
-    private static final float TRANSITION_TIME = 1.0f;
+    private static final float TRANSITION_TIME = 0.25f;
     private final Renderer renderer;
     private final PublishSubject<List<LivingCell>> gameTicks;
     private float timeSinceLastTick = 0f;
